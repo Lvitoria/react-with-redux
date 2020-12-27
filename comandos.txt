@@ -1,2 +1,15 @@
 create-react-app redux-simples
 npm i redux  react-redux
+
+
+//depois de uma ação ele sempre vai chamar todos os reducers
+
+arvores do componentes
+index
+  |
+  - app
+     |
+     - Intervalo,
+     - Media,
+     - Soma,
+     - Sorteio

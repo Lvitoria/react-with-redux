@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//o redux e o react são frameworks separados tem que juntar eles com este pacote "react-redux"
+import { Provider } from 'react-redux'
+import configStore from './store/storeConfig'
+
+const store = configStore()
+console.log("store", store)
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+   </Provider>,
   document.getElementById('root')
 );
 
